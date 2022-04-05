@@ -3,6 +3,10 @@ import RocketCard from '../rockets/rockets';
 
 export default function HomePage() {
   return (
-    <RocketCard />
+    <div>
+      <RocketCard />
+      <RocketCard />
+      <RocketCard />
+    </div>
   );
 }
