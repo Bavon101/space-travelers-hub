@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { joinedMission } from './redux/missions';
+import { joinedMission, leftMission } from './redux/missions';
 
 export default function MissionCard(props) {
   const {
@@ -34,7 +34,7 @@ export default function MissionCard(props) {
         </div>
       </td>
       <td>
-        <button type="submit" className="mission-btn" onClick={() => dispatch(joinedMission(id))}>
+        <button type="submit" className="mission-btn" onClick={() => (reserved ? dispatch(leftMission(id)) : dispatch(joinedMission(id)))}>
           Join Mission
         </button>
       </td>
