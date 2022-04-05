@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Vr from '../Vr';
 
 export default function HeaderLinks() {
   return (
     <div className="links">
-      <Link to="/" className="link">Rockets</Link>
-      <Link to="/missions" className="link">Missions</Link>
+      <NavLink to="/" className={(link) => (link.isActive ? 'active-link' : 'link')}>Rockets</NavLink>
+      <NavLink to="/missions" className={(link) => (link.isActive ? 'active-link' : 'link')}>Missions</NavLink>
       <Vr />
-      <Link to="/profile" className="link">My Profile</Link>
+      <NavLink to="/profile" className={(link) => (link.isActive ? 'active-link' : 'link')}>My Profile</NavLink>
     </div>
   );
 }
