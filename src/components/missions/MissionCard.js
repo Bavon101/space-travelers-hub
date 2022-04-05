@@ -1,21 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function MissionCard() {
+export default function MissionCard(props) {
+  const { mission, id, description } = props;
   return (
     <tr>
       <td>
-        Thaicom
+        {mission}
       </td>
       <td>
-        The Missions section displays a list of current missions along with their brief
-        description and participation status.
-        There is also a button next to each mission that allows users to join the
-        selected mission or leave the mission the user joined earlier.
+        {description}
       </td>
       <td>
         <div className="status-container">
           <h6>
-            not a member
+            {id}
           </h6>
         </div>
       </td>
@@ -27,3 +26,8 @@ export default function MissionCard() {
     </tr>
   );
 }
+MissionCard.propTypes = {
+  mission: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
