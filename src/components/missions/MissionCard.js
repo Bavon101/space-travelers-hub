@@ -34,8 +34,16 @@ export default function MissionCard(props) {
         </div>
       </td>
       <td>
-        <button type="submit" className="mission-btn" onClick={() => (reserved ? dispatch(leftMission(id)) : dispatch(joinedMission(id)))}>
-          Join Mission
+        <button
+          type="submit"
+          className="mission-btn"
+          style={{
+            color: reserved ? 'red' : null,
+            border: reserved ? '1px solid red' : null,
+          }}
+          onClick={() => (reserved ? dispatch(leftMission(id)) : dispatch(joinedMission(id)))}
+        >
+          {reserved ? 'Leave Mission' : 'Join Mission'}
         </button>
       </td>
     </tr>
