@@ -1,4 +1,5 @@
-table, td {
+table,
+td {
   border: 1px solid;
 }
 
@@ -7,16 +8,16 @@ table, td {
   justify-content: space-between;
   margin: 10px;
   align-items: center;
-  box-shadow: 0px 10px 10px -15px #111; 
+  box-shadow: 0 10px 10px -15px #111;
   padding: 5px;
 }
 
 .logo {
- display: flex;
- align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-h1{
+h1 {
   margin: 0;
   margin-left: 10px;
   padding: 0;

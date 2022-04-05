@@ -1,5 +1,5 @@
 import React from 'react';
-import logoImage from '../images/planet.png';
+import logoImage from '../../images/planet.png';
 
 export default function Logo() {
   return (
