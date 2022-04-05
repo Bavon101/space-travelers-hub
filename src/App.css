@@ -1,6 +1,17 @@
 table,
+th,
 td {
-  border: 1px solid;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 5px;
+}
+
+table {
+  margin: 20px;
+  text-align: left;
 }
 
 .header {
@@ -33,12 +44,35 @@ h1 {
   height: 25px;
 }
 
-.link {
+.link,
+.active-link {
   text-decoration: none;
   font-weight: 600;
   transition: 200ms;
 }
 
+.active-link {
+  text-decoration: underline;
+}
+
 .link:hover {
   text-decoration: underline;
+}
+
+.status-container {
+  background-color: gray;
+  border-radius: 3px;
+  text-align: center;
+  width: 100px;
+}
+
+h6 {
+  padding: 2px;
+  margin: 0;
+}
+
+.mission-btn {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
 }
