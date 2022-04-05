@@ -1,0 +1,12 @@
+.rocket-card {
+  display: flex;
+  margin: 30px;
+}
+
+button.rocket-button {
+  background-color: #0290ff;
+  padding: 6px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
