@@ -1,21 +1,42 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import fetchMissions from '../../api/data_fetch';
 import MissionCard from './MissionCard';
 
 export default function MissionsPage() {
+  const missions = useSelector((state) => state.missionsReducer);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    if (missions.length === 0) {
+      dispatch(fetchMissions());
+    }
+  }, []);
+  if (missions.length === 0) {
+    return (<div>No missions</div>);
+  }
   return (
     <div>
       <table>
-        <tr>
-          <th>Mission</th>
-          <th>Description</th>
-          <th>Status</th>
+        <thead>
+          <tr>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
 
-        </tr>
-        <MissionCard />
-        <MissionCard />
-        <MissionCard />
-        <MissionCard />
-        <MissionCard />
+          </tr>
+        </thead>
+        <tbody>
+          {
+            missions.map((mission) => (
+              <MissionCard
+                key={mission.id}
+                mission={mission.mission}
+                id={mission.id}
+                description={mission.description}
+              />
+            ))
+          }
+        </tbody>
       </table>
     </div>
   );
