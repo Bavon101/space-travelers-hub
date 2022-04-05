@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import fetchMissions from '../../api/data_fetch';
 import MissionCard from './MissionCard';
+import './missions.css';
 
 export default function MissionsPage() {
   const missions = useSelector((state) => state.missionsReducer);
@@ -27,12 +28,13 @@ export default function MissionsPage() {
         </thead>
         <tbody>
           {
-            missions.map((mission) => (
+            missions.map((mission, index) => (
               <MissionCard
                 key={mission.id}
                 mission={mission.mission}
                 id={mission.id}
                 description={mission.description}
+                index={index}
               />
             ))
           }
