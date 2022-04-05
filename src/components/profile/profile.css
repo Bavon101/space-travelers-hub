@@ -1,23 +1,23 @@
 .profile-container {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .profile-container-title {
-      font-weight: normal;
-      padding-left: 9%;
-  }
-  
-  li.profile-item {
-      list-style-type: none;
-      border: 1px solid;
-      padding: 30px;
-  }
-  
-  .profile-missions {
-      width: 45%;
-  }
-  
-  .profile-rockets {
-      width: 45%;
-  }
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-container-title {
+  font-weight: normal;
+  padding-left: 9%;
+}
+
+li.profile-item {
+  list-style-type: none;
+  border: 1px solid;
+  padding: 30px;
+}
+
+.profile-missions {
+  width: 45%;
+}
+
+.profile-rockets {
+  width: 45%;
+}

@@ -4,7 +4,7 @@ import './App.css';
 import Header from './components/header/Header';
 import HomePage from './components/pages/HomePage';
 import MissionsPage from './components/missions/MissionsPage';
-import Profile from './components/profile/Profile.js';
+import Profile from './components/profile/Profile';
 
 function App() {
   return (
