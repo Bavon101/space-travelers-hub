@@ -1,9 +1,19 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Header from './components/header/Header';
+import HomePage from './components/pages/HomePage';
+import MissionsPage from './components/pages/MissionsPage';
 
 function App() {
   return (
-    <div className="App" />
+    <div className="App">
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/missions" element={<MissionsPage />} />
+      </Routes>
+    </div>
   );
 }
 
