@@ -6,7 +6,11 @@ export function missionsReducer(state = [], action) {
     case MISSIONS_FETCHED:
 
       return [
-        ...action.payload,
+        ...action.payload.map((m) => ({
+          id: m.mission_id,
+          mission: m.mission_name,
+          description: m.description,
+        })),
       ];
 
     default:
