@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  align-items: center;
+  box-shadow: 0 10px 10px -15px #111;
+  padding: 5px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+}
+
+
+.link,
+.active-link {
+  text-decoration: none;
+  font-weight: 600;
+  transition: 200ms;
+}
+
+.active-link {
+  text-decoration: underline;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
