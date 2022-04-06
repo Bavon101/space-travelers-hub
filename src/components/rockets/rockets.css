@@ -5,20 +5,29 @@
 
 button.rocket-button {
   background-color: #0290ff;
-  padding: 6px;
   color: white;
   border: none;
   border-radius: 5px;
+  height: 30px;
 }
 
 button.rocket-cancel {
-  background-color: red;
-  padding: 6px;
-  color: white;
-  border: none;
+  color: grey;
   border-radius: 5px;
+  height: 30px;
+  background-color: white;
+  border-width: 1px;
 }
 
 .rocket-card-content {
   margin-left: 20px;
+}
+
+.rocket-reserve {
+  margin-right: 5px;
+  padding: 1px 4px;
+  background-color: lightseagreen;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
 }

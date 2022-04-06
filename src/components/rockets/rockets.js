@@ -37,7 +37,12 @@ const RocketCard = (props) => {
           {' '}
           {rocketName}
         </h1>
-        <p>{description}</p>
+        <p>
+          <span className="rocket-reserve" style={{ display: `${!reserved ? 'none' : 'inline'}` }}>
+            Reserved
+          </span>
+          {description}
+        </p>
         <div>
           { reserveButtons }
         </div>
