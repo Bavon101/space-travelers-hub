@@ -35,6 +35,7 @@ export default function MissionsPage() {
                 id={mission.id}
                 description={mission.description}
                 index={index}
+                reserved={mission.reserved}
               />
             ))
           }
