@@ -23,6 +23,11 @@ button.rocket-cancel {
   margin-left: 20px;
 }
 
+.rocket-card-content h1 {
+  margin: 0;
+  font-weight: 600;
+}
+
 .rocket-reserve {
   margin-right: 5px;
   padding: 1px 4px;

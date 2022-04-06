@@ -1,10 +1,14 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import './profile.css';
+import MyRockets from './reservedRocket';
 
 export default function Profile() {
   const missions = useSelector((state) => state.missionsReducer);
   const joinedMissions = missions.filter((mission) => mission.reserved === true);
+  const rocketState = useSelector(
+    (state) => state.rocketReducer.rockets,
+  ).filter((rocket) => rocket.reserved === true);
   return (
     <div className="profile-container">
       <div className="profile-missions">
@@ -26,17 +30,7 @@ export default function Profile() {
       </div>
       <div className="profile-rockets">
         <h1 className="profile-container-title">My Rockets</h1>
-        <ul className="profile-items">
-          <li className="profile-item">
-            Falcon 9
-          </li>
-          <li className="profile-item">
-            Falcon Heavy
-          </li>
-          <li className="profile-item">
-            Starship
-          </li>
-        </ul>
+        <MyRockets data={rocketState} />
       </div>
     </div>
   );
