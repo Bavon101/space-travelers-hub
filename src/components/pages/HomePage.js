@@ -21,7 +21,7 @@ const HomePage = () => {
         id, rocketName, description, flickrImages, reserved,
       }) => (
         <RocketCard
-          key={rocketName}
+          key={id}
           rocketName={rocketName}
           description={description}
           flickrImages={flickrImages}
