@@ -12,11 +12,11 @@ button.rocket-button {
 }
 
 button.rocket-cancel {
-    color: grey;
-    border-radius: 5px;
-    height: 30px;
-    background-color: white;
-    border-width: 1px;
+  color: grey;
+  border-radius: 5px;
+  height: 30px;
+  background-color: white;
+  border-width: 1px;
 }
 
 .rocket-card-content {
