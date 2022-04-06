@@ -1,21 +1,31 @@
 import React from 'react';
-import logoImage from '../../images/planet.png';
+import PropTypes from 'prop-types';
 import './rockets.css';
 
-export default function RocketCard() {
+const RocketCard = (props) => {
+  const {
+    rocketName, description, images,
+  } = props;
+
   return (
     <div className="rocket-card">
-      <img src={logoImage} width={70} height={70} alt="planet-logo" />
+      <img src={images} width={100} height={100} alt="planet-logo" />
       <div className="rocket-card-content">
-        <h1> Falcon 1 </h1>
-        <p>
-          September 2008, Falcon 1 became the first privately-developed
-          liquid-fuel launch vehicle to go into orbit around the Earth.
-          Reserve Rocket 1 was the first privately-developed liquid-fuel rocket to
-          be launched into orbit.
-        </p>
+        <h1>
+          {' '}
+          {rocketName}
+        </h1>
+        <p>{description}</p>
         <button type="button" className="rocket-button">Reserve Rocket</button>
       </div>
     </div>
   );
-}
+};
+
+RocketCard.propTypes = {
+  rocketName: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  images: PropTypes.string.isRequired,
+};
+
+export default RocketCard;

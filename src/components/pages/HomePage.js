@@ -5,8 +5,6 @@ export default function HomePage() {
   return (
     <div>
       <RocketCard />
-      <RocketCard />
-      <RocketCard />
     </div>
   );
 }
