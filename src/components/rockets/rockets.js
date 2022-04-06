@@ -4,12 +4,12 @@ import './rockets.css';
 
 const RocketCard = (props) => {
   const {
-    rocketName, description, images,
+    rocketName, description, flickrImages,
   } = props;
 
   return (
     <div className="rocket-card">
-      <img src={images} width={100} height={100} alt="planet-logo" />
+      <img src={flickrImages} width={200} height={200} alt={rocketName} />
       <div className="rocket-card-content">
         <h1>
           {' '}
@@ -25,7 +25,7 @@ const RocketCard = (props) => {
 RocketCard.propTypes = {
   rocketName: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  images: PropTypes.string.isRequired,
+  flickrImages: PropTypes.string.isRequired,
 };
 
 export default RocketCard;
