@@ -10,3 +10,15 @@ button.rocket-button {
   border: none;
   border-radius: 5px;
 }
+
+button.rocket-cancel {
+  background-color: red;
+  padding: 6px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.rocket-card-content {
+  margin-left: 20px;
+}
