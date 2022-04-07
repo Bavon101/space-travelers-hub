@@ -13,7 +13,7 @@ export default function MissionsPage() {
     }
   }, []);
   if (missions.length === 0) {
-    return (<div>No missions</div>);
+    return (<h3 className="no-missions-text">No missions</h3>);
   }
   return (
     <div>
