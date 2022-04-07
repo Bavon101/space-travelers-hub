@@ -13,6 +13,7 @@ The application will allow users to book rockets and join selected space mission
 ## Built With
 
 - React
+- Redux
 
 ## Live Demo
 
@@ -47,6 +48,7 @@ A Web Browser (preferably Google Chrome)
 👤 **Author 2**
 
 - GitHub: [Emmanuel Jolugbo](https://github.com/Thermiee)
+- LinkedIn: [Emmanuel Jolugbo](https://www.linkedin.com/in/emmanuel-jolugbo/)
 
 
 ## 🤝 Contributing
