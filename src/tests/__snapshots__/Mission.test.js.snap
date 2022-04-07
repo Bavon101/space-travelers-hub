@@ -1,68 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render Mission Card 1`] = `
-<tr
-  id="jhgrfgw"
+exports[`Render Missions Page 1`] = `
+<div
   style={
     Object {
-      "backgroundColor": "white",
+      "margin": "auto",
+      "textAlign": "center",
     }
   }
 >
-  <td>
-    <h3>
-      To Mars
-    </h3>
-  </td>
-  <td>
-    Test missions card
-  </td>
-  <td>
-    <div
-      className="status-container"
-      style={
-        Object {
-          "backgroundColor": null,
-        }
-      }
-    >
-      <h6>
-        Active Member
-      </h6>
-    </div>
-  </td>
-  <td>
-    <button
-      className="mission-btn"
-      onClick={[Function]}
-      style={
-        Object {
-          "border": "1px solid red",
-          "color": "red",
-        }
-      }
-      type="submit"
-    >
-      Leave Mission
-    </button>
-  </td>
-</tr>
-`;
-
-exports[`Render Missions  1`] = `
-<div>
-  No missions
-</div>
-`;
-
-exports[`Render Missions Page 1`] = `
-<div>
-  No missions
-</div>
-`;
-
-exports[`render Missions  1`] = `
-<div>
   No missions
 </div>
 `;
