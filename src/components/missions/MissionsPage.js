@@ -13,7 +13,15 @@ export default function MissionsPage() {
     }
   }, []);
   if (missions.length === 0) {
-    return (<div>No missions</div>);
+    return (
+      <div style={{
+        textAlign: 'center',
+        margin: 'auto',
+      }}
+      >
+        No missions
+      </div>
+    );
   }
   return (
     <div>
