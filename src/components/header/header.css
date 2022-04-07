@@ -37,3 +37,9 @@ h1 {
 .link:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check Homepage renders correctly 1`] = `
+<div>
+  <ul>
+    <li>
+      <h1>
+        No rockets available
+      </h1>
+    </li>
+  </ul>
+</div>
+`;
