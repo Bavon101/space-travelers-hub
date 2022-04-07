@@ -1,0 +1,38 @@
+.rocket-card {
+  display: flex;
+  margin: 30px;
+}
+
+button.rocket-button {
+  background-color: #0290ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+}
+
+button.rocket-cancel {
+  color: grey;
+  border-radius: 5px;
+  height: 30px;
+  background-color: white;
+  border-width: 1px;
+}
+
+.rocket-card-content {
+  margin-left: 20px;
+}
+
+.rocket-card-content h1 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.rocket-reserve {
+  margin-right: 5px;
+  padding: 1px 4px;
+  background-color: lightseagreen;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+}

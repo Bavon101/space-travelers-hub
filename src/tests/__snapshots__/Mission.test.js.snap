@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Missions Page 1`] = `
+<div
+  style={
+    Object {
+      "margin": "auto",
+      "textAlign": "center",
+    }
+  }
+>
+  No missions
+</div>
+`;
