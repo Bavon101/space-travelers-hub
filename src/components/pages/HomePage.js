@@ -6,13 +6,13 @@ const HomePage = () => {
   const data = useSelector((state) => state.rocketReducer.rockets);
   if (data.length === 0) {
     return (
-      <>
+      <div>
         <ul>
           <li>
             <h1>No rockets available</h1>
           </li>
         </ul>
-      </>
+      </div>
     );
   }
   return (
